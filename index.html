@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        header {
+            width: 100%;
+            height: 65px;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        header nav .nav {
+            width: 250px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header nav .nav a {
+            margin-right: 10px;
+            color: #000000;
+        }
+
+
+
+
+
+        .main {
+            margin-top: 100px;
+        }
+
+        .logo {
+            display: block;
+            width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .search {
+            display: block;
+            width: 500px;
+            height: 24px;
+            padding: 10px 30px 10px 30px;
+            border: 1px solid #dfe1e5;
+
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 24px;
+            border-color: #cfd9de;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+
+
+            padding: 8px 16px 8px 16px;
+            font-size: 14px;
+            border-radius: 4px;
+            border: 1px solid #cfd9de;
+            background: #f8f9fa;
+            margin-top: 30px;
+
+
+        }
+        @media (max-width: 600px) {
+            .logo {
+                width: 80%;
+            }
+
+            .search {
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li>
+                    <a href="https://mail.google.com/mail">Gmail</a>
+                </li>
+
+                <li>
+                    <a href="https://www.google.com.pe/imghp">Images</a>
+                </li>
+
+
+
+
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <img src="google-logo.png" class="logo">
+        <input type="text" class="search">
+        
+
+        <div class="wrapper">
+            <button class="btn">Google Search</button>
+            <button class="btn">I'm Feeling Lucky</button>
+        </div>
+    </div>
+</body>
+
+</html>
